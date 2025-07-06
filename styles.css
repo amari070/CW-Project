@@ -7,7 +7,7 @@
   --yellow: #ffc907;
 }
 
-/* Reset and base styles */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +21,8 @@ body {
   line-height: 1.6;
 }
 
-/* Hero section */
 .hero {
-  background-image: url('hero.jpg');
+  background-image: url('placeholder.jpg'); /* Replace with your hero image */
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
@@ -34,7 +33,7 @@ body {
 
 .hero::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  background-color: rgba(0, 0, 0, 0.4); /* optional overlay */
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
@@ -71,7 +70,6 @@ body {
   background-color: var(--orange);
 }
 
-/* About section */
 .about {
   padding: 60px 20px;
   text-align: center;
@@ -83,7 +81,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 20px;

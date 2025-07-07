@@ -1,3 +1,19 @@
+/* Load Proxima Nova (only works if you're self-hosting the font) */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+       url('fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/ProximaNova-Bold.woff2') format('woff2'),
+       url('fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* Color palette */
 :root {
   --peach: #8BD1CB;
@@ -15,7 +31,7 @@
 }
 
 body {
-  font-family: 'Promia Nova', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   background-color: var(--cream);
   color: var(--gray);
   line-height: 1.6;
@@ -23,7 +39,7 @@ body {
 
 /* Hero section with background image */
 .hero {
-  background-image: url('hero.jpg'); /* Optional background image */
+  background-image: url('hero.jpg');
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
@@ -63,7 +79,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* CTA button */
+/* CTA button with transition & transform */
 .cta-button {
   background-color: var(--yellow);
   color: black;
@@ -71,14 +87,16 @@ body {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s;
+  display: inline-block;
 }
 
 .cta-button:hover {
   background-color: var(--orange);
+  transform: scale(1.1);
 }
 
-/* Inline hero image (visible image tag) */
+/* Inline hero image */
 .hero-img {
   width: 100%;
   max-width: 600px;
@@ -106,4 +124,33 @@ body {
   font-size: 0.9rem;
   background-color: var(--cream);
   color: var(--gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
 }

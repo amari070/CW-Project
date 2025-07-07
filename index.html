@@ -13,9 +13,36 @@
     body {
       font-family: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif;
     }
+    .top-nav {
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .top-nav a {
+      color: #0077b6;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.2s;
+    }
+    .top-nav a:hover {
+      color: #023e8a;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+  <nav class="top-nav">
+    <a href="#about">About Us</a>
+    <a href="#stories">Stories</a>
+    <a href="#contribute">Contribute</a>
+  </nav>
   <header class="hero">
     <div class="hero-content">
       <!-- Inline image for visual confirmation -->
@@ -36,7 +63,7 @@
     <img src="logo.png" alt="Charity: Water Logo" class="logo-img" style="max-width:260px; height:auto;">
   </div>
 
-  <section class="about">
+  <section class="about" id="about">
     <h2>Our Mission</h2>
     <p>
       Charity: Water empowers young activists to make a real, measurable
@@ -45,9 +72,25 @@
     </p>
   </section>
 
+  <section class="stories" id="stories">
+    <h2>Stories</h2>
+    <p>
+      <!-- Add your stories content here -->
+      Inspiring stories from communities and contributors coming soon.
+    </p>
+  </section>
+
+  <section class="contribute" id="contribute">
+    <h2>Contribute</h2>
+    <p>
+      <!-- Add your contribute content here -->
+      Find out how you can help bring clean water to those in need.
+    </p>
+  </section>
+
   <footer class="footer">
     <p>© 2025 Charity: Water Campaign | Built by Aishwarya Marishetty</p>
   </footer>
 
   <!-- Link your JavaScript file at the end for better loading performance -->
-  <script src="scripts.js" defer></script>
+  <script src="scripts.js"

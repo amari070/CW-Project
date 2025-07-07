@@ -1,10 +1,10 @@
 /* Color palette */
 :root {
-  --peach: #dfa186;
-  --gray: #948a82;
+  --peach: #8BD1CB;
+  --gray: #2E9DF7;
   --cream: #fef8f5;
-  --orange: #fe34d9;
-  --yellow: #ffc907;
+  --orange: #F16061;
+  --yellow: #FFC907;
 }
 
 /* Basic Reset */

@@ -21,8 +21,9 @@ body {
   line-height: 1.6;
 }
 
+/* Hero section with background image */
 .hero {
-  background-image: url('placeholder.jpg'); /* Replace with your hero image */
+  background-image: url('hero.jpg'); /* Optional background image */
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
@@ -31,31 +32,38 @@ body {
   position: relative;
 }
 
+/* Optional overlay for contrast */
 .hero::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.4); /* optional overlay */
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   z-index: 1;
 }
 
+/* Content stays on top of overlay */
 .hero-content {
   position: relative;
   z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Styling for headline */
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: var(--yellow);
 }
 
+/* Styling for subheadline */
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
+/* CTA button */
 .cta-button {
   background-color: var(--yellow);
   color: black;
@@ -70,6 +78,16 @@ body {
   background-color: var(--orange);
 }
 
+/* Inline hero image (visible image tag) */
+.hero-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* About section */
 .about {
   padding: 60px 20px;
   text-align: center;
@@ -81,6 +99,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   padding: 20px;
